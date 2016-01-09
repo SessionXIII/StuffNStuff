@@ -22,7 +22,7 @@ namespace CreativeSpore
 		void LateUpdate () 
 		{
 			//Note: ViewCamera.orthographicSize is not a real zoom based on pixels. This is the formula to calculate the real zoom.
-			Camera.orthographicSize =  (Screen.height)/(2f*Zoom*PixelToUnits);
+			//Camera.orthographicSize =  (Screen.height)/(2f*Zoom*PixelToUnits);
 			Vector3 vOri = Camera.ScreenPointToRay( Vector3.zero ).origin;
 
 			m_vCamRealPos = Camera.transform.position;
